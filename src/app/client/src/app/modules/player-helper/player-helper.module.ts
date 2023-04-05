@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SuiModule } from 'ng2-semantic-ui-v9';
 import { TelemetryModule } from '@sunbird/telemetry';
-import {SunbirdPdfPlayerModule} from '@project-sunbird/sunbird-pdf-player-v9';
+//import {SunbirdPdfPlayerModule} from '@project-sunbird/sunbird-pdf-player-v9';
 import { SunbirdVideoPlayerModule } from '@project-sunbird/sunbird-video-player-v9';
-import { SunbirdEpubPlayerModule } from '@project-sunbird/sunbird-epub-player-v9';
+//import { SunbirdEpubPlayerModule } from '@project-sunbird/sunbird-epub-player-v9';
 import {
   ContentCreditsComponent, PlayerComponent, ContentPlayerMetadataComponent,
   CollectionTreeComponent, FancyTreeComponent, CollectionPlayerMetadataComponent,
@@ -19,10 +19,11 @@ import { CoreModule } from '@sunbird/core';
     TelemetryModule,
     SharedModule,
     CoreModule,
-    SunbirdPdfPlayerModule,
+    //SunbirdPdfPlayerModule,
     SunbirdVideoPlayerModule,
-    SunbirdEpubPlayerModule
+    //SunbirdEpubPlayerModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [ContentCreditsComponent, PlayerComponent, ContentPlayerMetadataComponent,
     CollectionTreeComponent, FancyTreeComponent, CollectionPlayerMetadataComponent, ContentRatingComponent,
     CommingSoonComponent],

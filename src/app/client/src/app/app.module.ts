@@ -1,5 +1,5 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -43,6 +43,7 @@ import { QumlPlayerService } from './modules/sourcing/services/quml-player/quml-
     CollectionEditorLibraryModule,
     AppRoutingModule // don't add any module below this because it contains wildcard route
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent],
   providers: [

@@ -1,9 +1,9 @@
 <div id="contentPlayer" class="contentViewerIframeShadow">
     <iframe #contentIframe *ngIf="playerType === 'default-player'" class="contentViewerIframeShadow h-100"
         name="contentPlayer"></iframe>
-    <sunbird-epub-player *ngIf="playerType === 'epub-player'" [playerConfig]="playerConfig"
+<!--     <sunbird-epub-player *ngIf="playerType === 'epub-player'" [playerConfig]="playerConfig"
         (playerEvent)="eventHandler($event)" (telemetryEvent)="generateContentReadEvent($event, true)">
-    </sunbird-epub-player>
+    </sunbird-epub-player> -->
     <sunbird-pdf-player *ngIf="playerType === 'pdf-player'" [playerConfig]="playerConfig"
         (playerEvent)="eventHandler($event)" (telemetryEvent)="generateContentReadEvent($event, true)">
     </sunbird-pdf-player>
