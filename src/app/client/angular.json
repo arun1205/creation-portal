@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": false
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -86,7 +85,6 @@
               "node_modules/videojs-contrib-quality-levels/dist/videojs-contrib-quality-levels.min.js",
               "node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.min.js",
               {
-                "inject": true,
                 "input": "src/assets/libs/semantic-ui-tree-picker/semantic-ui-tree-picker.js",
                 "bundleName": "semanticTreePicker"
               }
@@ -280,7 +278,7 @@
                   "maximumError": "6mb"
                 },
                 {
-                  "type": "anyComponentStyle",
+                  "type": "any",
                   "maximumWarning": "6kb"
                 }
               ]
